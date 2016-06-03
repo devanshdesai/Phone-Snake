@@ -1,0 +1,89 @@
+body {
+    background-color: #eee;
+    margin: 0;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 300;
+}
+h4 {
+    font-weight: 300;
+}
+h5 {
+    font-weight: 100;
+    font-size: 1.2em;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+li {
+    font-weight: 100;
+}
+#canvas {
+    display: block;
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: 6px solid #fff;
+}
+.overlay {
+    display: block;
+    background-color: #000;
+    color: #fff;
+    font-size: 4em;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-left: -139px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+.footer {
+    position: relative;
+    bottom: 1%;
+    color: #fff;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+#created:hover {
+    color: #99ff99;
+}
+.instructions {
+    position: relative;
+    display: block;
+    margin-left: -160px;
+    width: 375px;
+    margin-top: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#phone {
+    position: relative;
+    display: block;
+    top: 50%;
+}
+#submit {
+    font-size: 0.25em;
+}
+#retry {
+    font-size: 0.25em;
+}
+#nsa {
+    width: 50%;
+    max-width: 350px;
+}
+#submitted {
+    display: none;
+}
+#game {
+    display: none;
+}
+#difficulty {
+    margin-top: 0.5em;
+    background-color: #81c784;
+}

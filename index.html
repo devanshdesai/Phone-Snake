@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="snake.png">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div id="game">
+                <h1 id="phone" class="center">Enter your phone number:<br>(XXX) XXX-XXXX</h1>
+                <canvas id="canvas" width=509 height=532 class="center z-depth-3"></canvas>
+                <div id="overlay" class="center">
+                    <br>
+                    <br>Press ENTER to start</div>
+                <div class="col s4">
+                    <div class="card blue darken-3 instructions z-depth-3">
+                        <ul class="center white-text">
+                            <h4 class="center">Instructions</h4>
+                            <h5>Objective: Try to enter your phone number</h5>
+                            <li><b>Move:</b> Up, down, left, right arrow keys</li>
+                            <li><b>Play / Pause:</b> Enter</li>
+                            <li><b>Reset:</b> Esc</li>
+                            <a id="difficulty" class='dropdown-button btn-large center' href='#' data-activates='dropdown1'>Difficulty</a>
+                        </ul>
+                        <div class="footer">
+                            <a id="created" target="_blank" href="http://devanshdesai.com/">Created by <b>Devansh Desai</a></b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul id='dropdown1' class='dropdown-content'>
+        <li><a id="easy" class="center green-text text-lighten-1" href="#!"><b>Easy</b></a></li>
+        <li><a id="medium" class="center amber-text" href="#!"><b>Medium</b></a></li>
+        <li><a id="hard" class="center red-text text-accent-4" href="#!"><b>Hard</a></b>
+        </li>
+    </ul>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+<script type="text/javascript" src="snake.js"></script>
+
+</html>

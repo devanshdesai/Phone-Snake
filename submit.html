@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thank You</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="nsa.ico">
+</head>
+
+<body>
+    <div class="container">
+        <div id="submitted" class="row center">
+            <br>
+            <br>
+            <img id="nsa" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Seal_of_the_United_States_National_Security_Agency.svg/2000px-Seal_of_the_United_States_National_Security_Agency.svg.png">
+            <br>
+            <br>
+            <h1>Thank you for submitting your information. We will keep it safe.</h1>
+            <h4>Click below to give us more of your personal information.</h4>
+            <br>
+            <a href="#">
+                <div id="again" class='waves-effect waves-light blue darken-4 btn-large'><i class='material-icons right'>replay</i>Retry</div>
+            </a>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#submitted").fadeIn(4000);
+        $("#again").click(function() {
+            $("#submitted").fadeOut(1000, function() {
+                window.location = "index.html";
+            });
+        });
+    });
+</script>
+
+</html>
