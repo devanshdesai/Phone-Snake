@@ -65,6 +65,7 @@ $(document).ready(function() {
         $("#difficulty").css("background-color", easy);
         clearInterval(interval);
         interval = setInterval(moveSnake, 200);
+        $(".created").attr("id", "easy");
     });
 
     $("#medium").click(function() {
@@ -82,6 +83,7 @@ $(document).ready(function() {
         $("#difficulty").css("background-color", medium);
         clearInterval(interval);
         interval = setInterval(moveSnake, 150);
+        $(".created").attr("id", "medium");
     });
 
     $("#hard").click(function() {
@@ -99,6 +101,7 @@ $(document).ready(function() {
         $("#difficulty").css("background-color", hard);
         clearInterval(interval);
         interval = setInterval(moveSnake, 100);
+        $(".created").attr("id", "hard");
     });
 });
 
@@ -156,8 +159,7 @@ function startGame() {
         out.push("X");
     }
 
-    cells[463] = 1;
-    cells[464] = 2;
+    cells[463] = 1;cells[464] = 2;
     cells[465] = 3;
     snake_position = 465;
 
