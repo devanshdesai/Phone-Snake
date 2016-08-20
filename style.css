@@ -50,8 +50,14 @@ a {
     text-decoration: none;
     color: #fff;
 }
-#created:hover {
-    color: #99ff99;
+#easy:hover {
+    color: #66bb6a;
+}
+#medium:hover {
+    color: #ffc107;
+}
+#hard:hover {
+    color: #d50000;
 }
 .instructions {
     position: relative;
